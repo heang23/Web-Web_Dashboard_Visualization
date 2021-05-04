@@ -1,0 +1,187 @@
+                            /*
+          NOTE: Commenting is a bit different in CSS. 
+          They start with forward-slash + asterisk 
+          and end with back-slash + asterisk.
+          */
+                        /* h1 heading tag */
+                        
+                        h1 {
+                            /* Put a 15-pixel margin at the bottom of the heading. */
+                            margin-bottom: 15px;
+                            /* Change the size of your font to 60 pixels high. */
+                            font-size: 40px;
+                            /* This will color the heading font white. */
+                            color: white;
+                            /* Align the text to the center of its enclosing element (e.g. div). */
+                            text-align: left;
+                            /* The background of the heading element will now be black. */
+                            background-color: rgb(1, 185, 160);
+                        }
+                        /* h2 heading tags */
+                        
+                        h2 {
+                            /* Put a 15-pixel margin at the top of all h2 headings. */
+                            margin-top: 15px;
+                            margin-bottom: 15px;
+                            font-size: 40px;
+                            color: rgb(1, 185, 160);
+                            text-align: left;
+                        }
+                        /* h3 heading tags */
+                        
+                        h3 {
+                            margin-top: 15px;
+                            font-size: 30px;
+                            color: rgb(1, 185, 160);
+                            text-align: left;
+                        }
+                        /* All img tags */
+                        
+                        img {
+                            /* 
+    Center a block element in the middle of its enclosing tag.
+    When you use the "auto" rule on both left and right margins, 
+    your browser will do the math necessary to center a block element.
+    */
+                            margin-left: auto;
+                            margin-right: auto;
+                            /* Block display (more on this later) */
+                            display: block;
+                            /* box-shadow: */
+                        }
+                        /* All p tags */
+                        
+                        p {
+                            text-align: justify;
+                            font-size: 30px;
+                            font-family: arial;
+                            color: gray;
+                        }
+                        /* All unordered list tags */
+                        
+                        ul {
+                            text-align: center;
+                            font-size: 35px;
+                            /* Give an element a solid border. */
+                            border-style: solid;
+                            /* Render the border 5 pixels thick. */
+                            border-width: 5px;
+                            /* Include bullets in the content flow. */
+                            /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+                            list-style-position: inside;
+                        }
+                        /* Navbar container */
+                        
+                        .navigation .navbar-a {
+                            color: rgb(52, 149, 165);
+                            margin-left: 0px;
+                            padding: inherit;
+                            font-weight: bold;
+                            background-color: rgb(255, 255, 255);
+                            font-family: Arial;
+                        }
+                        
+                        .navbar {
+                            overflow: hidden;
+                            font-family: Arial;
+                            max-height: 50px;
+                        }
+                        /* Links inside the navbar */
+                        
+                        .navbar a {
+                            float: left;
+                            font-size: 30px;
+                            color: white;
+                            text-align: center;
+                            padding: 14px 16px;
+                            text-decoration: none;
+                        }
+                        /* The dropdown container */
+                        
+                        .dropdown {
+                            float: right;
+                            overflow: hidden;
+                        }
+                        /* Dropdown button */
+                        
+                        .dropdown .dropbtn {
+                            font-size: 16px;
+                            border: none;
+                            outline: none;
+                            color: white;
+                            padding: 14px 16px;
+                            background-color: inherit;
+                            font-family: inherit;
+                            /* Important for vertical align on mobile phones */
+                            margin: 20px;
+                            /* Important for vertical align on mobile phones */
+                        }
+                        /* Add a red background color to navbar links on hover */
+                        
+                        .navbar a:hover,
+                        .dropdown:hover .dropbtn {
+                            padding: 10 px;
+                            background-color: red;
+                        }
+                        /* Dropdown content (hidden by default) */
+                        
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: rgba(52, 150, 165, 0.75);
+                            min-width: 160px;
+                            z-index: 1;
+                        }
+                        /* Links inside the dropdown */
+                        
+                        .dropdown-content a {
+                            float: none;
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                            text-align: left;
+                        }
+                        /* Add a grey background color to dropdown links on hover */
+                        
+                        .dropdown-content a:hover {
+                            background-color: #ddd;
+                        }
+                        /* Show the dropdown menu on hover */
+                        
+                        .dropdown:hover .dropdown-content {
+                            display: block;
+                        }
+                        
+                        .column {
+                            float: left;
+                            width: 24%;
+                            padding: 5px;
+                        }
+                        
+                        .column_a {
+                            float: left;
+                            width: 40%;
+                            padding: 25px;
+                        }
+                        /* Clearfix (clear floats) */
+                        
+                        .row::after {
+                            content: "";
+                            clear: both;
+                            display: table;
+                        }
+                        
+                        .navbar-links__item {
+                            color: #424950;
+                            color: var(--charcoal-grey-two);
+                            display: inline-block;
+                            height: 45px;
+                            margin: 0 20px;
+                            padding: 15px 0;
+                            position: relative;
+                            text-transform: uppercase;
+                        }
+                        
+                        .nav-link:hover {
+                            background-color: rgba(52, 150, 165, 0.75);
