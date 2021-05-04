@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>
+        <nav class="navbar">
+            <a href="#">Latitude</a>
+            <div class="dropdown">
+                <button class="dropbtn">Plots 
+              </button>
+                <div class="dropdown-content">
+                    <a href="MaxTemp.html">Max Temperature</a>
+                    <a href="Humidity.html">Humidity</a>
+                    <a href="cloudiness.html">Cloudiness</a>
+                    <a href="windspeed.html">Wind Speed</a>
+                    <a href="comparison.html" class="navbar-links__item">Comparison</a>
+                    <a href="data.html" title="data">Data</a>
+                </div>
+            </div>
+            </div>
+            </div>
+    </h1>
+    <h2>Summary: Latitude vs. X</h2>
+
+    <img src="Figures/Latitude_vs_Max_temp.png" alt="Latitude vs. Max Temperature" align="left" style="width: 30%">
+
+    <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+
+    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: Temperature, cloudiness, win speed, and humidity. This site provides the source data and visualizations created as
+        part of the analysis, as well as explanations and desriptions of any trends and correlations witnessed.</p>
+
+    <h3>Visualizations</h3>
+    <div class="row">
+        <div class="column">
+            <img src="Figures/Latitude_vs_Max_temp.png" alt="MaxTemperature" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="Figures/Latitude_vs_Humidity.png" alt="Humidity" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="Figures/Latitude_vs_Cloudiness.png" alt="Cloudiness" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="Figures/Latitude_vs_Wind_Speed.png" alt="Windspeed" style="width:100%">
+        </div>
+    </div>
+    <p>
+        <a href="MaxTemp.html">Max Temperature</a>
+        <a href="Humidity.html">Humidity</a>
+        <a href="cloudiness.html">Cloudiness</a>
+        <a href="windspeed.html">Wind Speed</a>
+        <a href="comparison.html" class="navbar-links__item">Comparison</a>
+        <a href="data.html" title="data">Data</a>
+    </p>
+</body>
+
+</html>
